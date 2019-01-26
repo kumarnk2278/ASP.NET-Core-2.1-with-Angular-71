@@ -82,7 +82,7 @@ namespace AzureApi.Repository
         {
             if (db != null)
             {
-                // -- ** Queu ** --
+              /*  // -- ** Queue ** --
                 var connString = ConfigurationManager.ConnectionStrings["MyStorageConnString"].ToString();
                 
                 //Queue is part of storge account
@@ -112,6 +112,7 @@ namespace AzureApi.Repository
                 var contents = message1.AsString;
 
                 // -- End Queue ** --
+                */
                 await db.Post.AddAsync(post);
                 await db.SaveChangesAsync();
 
