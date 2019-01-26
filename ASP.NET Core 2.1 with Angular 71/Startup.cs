@@ -11,6 +11,7 @@ namespace ASP.NET_Core_2._1_with_Angular_71
     public class Startup
     {
         public Startup(IConfiguration configuration)
+
         {
             Configuration = configuration;
         }
@@ -62,7 +63,8 @@ namespace ASP.NET_Core_2._1_with_Angular_71
 
                 if (env.IsDevelopment())
                 {
-                    spa.UseAngularCliServer(npmScript: "start");
+                   // spa.UseAngularCliServer(npmScript: "start");
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
                 }
             });
         }
