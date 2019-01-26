@@ -6,12 +6,11 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ASP.NET_Core_2._1_with_Angular_71
+namespace ASP.NET_Core_2._1_with_Angular_72
 {
     public class Startup
     {
         public Startup(IConfiguration configuration)
-
         {
             Configuration = configuration;
         }
@@ -63,7 +62,6 @@ namespace ASP.NET_Core_2._1_with_Angular_71
 
                 if (env.IsDevelopment())
                 {
-                    // spa.UseAngularCliServer(npmScript: "start");
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });

@@ -1,0 +1,38 @@
+<div class="container">
+  <table class="table table-striped table-bordered table table-hover">
+    <tr>
+      <td class="tbl2">Post Id</td>
+      <td class="tbl2">CreateDate</td>
+      <td class="tbl2">Title</td>
+      <td class="tbl2">Description</td>
+      <td class="tbl2">Category Id</td>
+    <tr *ngFor="let post of posts" class="table-warning">
+      <td class="tbl2">{{post.postId}}</td>
+      <td class="tbl2">{{post.title}}</td>
+      <td class="tbl2">{{post.createdDate}}</td>
+      <td class="tbl2">{{post.description}}</td>
+      <td class="tbl2">{{post.categoryId}}</td>
+    </tr>
+  </table>
+  <table class="table table-striped table-bordered table table-hover">
+    <tr>
+      <td class="tbl2">Post Id</td>
+      <td class="tbl2">CreateDate</td>
+      <td class="tbl2">Title</td>
+      <td class="tbl2">Description</td>
+      <td class="tbl2">Category Id</td>
+      <td class="tbl2">
+        <!--<button type="button" class="btn btn-info" matTooltip="Click Edit Button" (click)="loadEmployeeToEdit(post.Postid)">Edit</button>-->
+      </td>
+    <tr>
+      <td><input [(ngModel)]="post1.title" placeholder="title"></td>
+      <td><input [(ngModel)]="post1.createdDate" placeholder="createdDate"></td>
+      <td><input [(ngModel)]="post1.description" placeholder="description"></td>
+      <td><input [(ngModel)]="post1.categoryid" placeholder="categoryid"></td>
+      <td><button (click)="addPost()">Add</button></td>
+    </tr>
+  </table>
+  <p *ngIf="show">
+    data is saved.
+  </p>
+</div>

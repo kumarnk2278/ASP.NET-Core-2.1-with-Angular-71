@@ -1,0 +1,21 @@
+// Post Data to Queue\Service Bus
+// Post Data to Sql Server Using Function App
+// Use Web Job to Send Data to Send Grid for email
+// Save Images in Blob to read
+// Redis Cache to Read Data in App
+// Use Azure Operational Insight
+// AppInsight
+// Use Swagger
+// Use OData
+// Use OAuth
+
+
+// Azure
+// Create Dev Test Env
+// Create VM using Azure Powershell command 3 VM with Load Balanacer
+// Shutdown after use
+
+https://www.techiediaries.com/angular-tutorial/
+
+https://www.c-sharpcorner.com/article/crud-operation-in-angular-7-using-web-api/
+
